@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="Loan Department">
+    <listeners>
+        <listener class-name="Testpackage.Listners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="personal loan">
+  
+   <parameter name="URL" value="Nothing.com"></parameter>
+    <parameter name="APIKey/username" value="123456"></parameter>
+    <classes>
+        <class name="Testpackage.day1">
+            <methods>
+                <exclude name="Demo">
+
+                </exclude>
+            </methods>
+        </class>
+        <class name="Testpackage.day2"></class>
+        <class name="Testpackage.day4"></class>
+        
+    </classes>
+</test>
+    
+<test name="Carloan">
+    
+    <classes>
+        <class name="Testpackage.day3">
+            <methods>
+                <exclude name="LoginAPIcarloan"></exclude>
+            </methods>
+        </class>
+    </classes>
+    
+</test></suite>
